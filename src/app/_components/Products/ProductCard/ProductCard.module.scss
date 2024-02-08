@@ -1,0 +1,78 @@
+@import 'src/theme/helpers';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 15px;
+  background: #2B2B2B;
+  align-items: center;
+  box-shadow: 0 12px 27px 0 rgba(0, 0, 0, 0.10),
+  0 49px 49px 0 rgba(0, 0, 0, 0.09),
+  0 111px 66px 0 rgba(0, 0, 0, 0.05),
+  0 197px 79px 0 rgba(0, 0, 0, 0.01),
+  0 307px 86px 0 rgba(0, 0, 0, 0.00);
+  color: white;
+  cursor: pointer;
+  transition: transform .1s;
+
+  @include arrayProps((
+          padding: '16px 24px' '16px 24px' '16px 24px' '40px 24px',
+          width: auto null '100%'
+  ));
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+
+    @include arrayProps((
+            min-width: 160px null null 200px 250px,
+    ))
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  width: min-content;
+  white-space: pre-wrap;
+
+
+  @include arrayProps((
+          font-size: 16px 26px 20px 40px 36px,
+  ))
+}
+
+.btn {
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF7A00;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform .1s;
+  box-shadow: 0 11px 23px 0 rgba(0, 0, 0, 0.10),
+  0 42px 42px 0 rgba(0, 0, 0, 0.09),
+  0 95px 57px 0 rgba(0, 0, 0, 0.05),
+  0 168px 67px 0 rgba(0, 0, 0, 0.01),
+  0 263px 74px 0 rgba(0, 0, 0, 0.00);
+  margin-top: 20px;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  @include arrayProps((
+          padding: '22px 0' null '22px 0' '30px 0',
+          font-size: 20px null null 24px,
+  ))
+}

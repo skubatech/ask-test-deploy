@@ -1,0 +1,162 @@
+@import 'src/theme/helpers';
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  @include arrayProps((
+    flex-direction: 'column' 'row',
+    padding-bottom: 40px null 40px 60px,
+    height: 495px 243px 310px 420px 512px,
+  ));
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 67px;
+
+    @include arrayProps((
+      margin-top: 30px null 46px 87px,
+      padding-left: 24px null 48px 120px,
+    ));
+
+    .title {
+      @include text(72px, normal, 700, normal, #fff);
+      @include arrayProps((
+        font-size: 36px null null 61px 96px,
+      ));
+    }
+
+    .text {
+      @include text(48px, normal, 400, normal, #fff);
+      @include arrayProps((
+        font-size: 24px null null 36px 48px,
+      ));
+
+      &::after {
+        content: '3';
+        @include text(32px, normal, 400, normal, #fff);
+        @include arrayProps((
+                font-size: 16px null null 22px 32px,
+        ));
+        position: absolute;
+      }
+    }
+
+    .btn {
+      background-color: #ff7a00;
+      @include text(24px, normal, 700, normal, #fff);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 60px;
+      max-width: fit-content;
+      box-sizing: border-box;
+      @include arrayProps((
+        margin-top: 15px null 30px 40px 60px,
+        margin-bottom: 15px 0,
+        font-size: 20px 18px 16px 24px,
+        padding: '25px 35px' '20px 30px' '16px 21px' '30px 40px',
+        border-radius: 20px null 10px 20px,
+      ))
+    }
+  }
+
+  .imgWrap {
+    @include arrayProps((
+      height: 270px 243px 310px 420px 512px,
+    ));
+
+    .img {
+      height: 100%;
+      object-fit: cover;
+      @include arrayProps((
+        max-width: '100%' 369px 483px 650px 875px,
+        min-height: 240px 243px 260px 420px 512px,
+      ));
+    }
+  }
+
+  .banner1 {
+    clip-path: polygon(100% 100%, 100% 0%, 10% 0%, 0% 100%);
+    @include arrayProps((
+            clip-path: 'polygon(100% 100%, 100% 5%, 0% 12%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 7% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 7% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 10% 0%, 0% 100%)',
+    ));
+  }
+
+  .banner2 {
+    clip-path: polygon(100% 100%, 100% 0%, 7% 0%, 1% 100%);
+    width: 789px;
+    @include arrayProps((
+            clip-path: 'polygon(100% 100%, 100% 8%, 0% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 9% 0%, 1% 100%)' 'polygon(100% 100%, 100% 0%, 9% 0%, 1% 100%)' 'polygon(100% 100%, 100% 0%, 7% 0%, 1% 100%)',
+    ));
+  }
+
+  .banner3 {
+    clip-path: polygon(100% 100%, 100% 0%, 8% 0%, 0% 100%);
+    width: 767px;
+    @include arrayProps((
+            clip-path: 'polygon(100% 100%, 100% 4%, 0% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 6% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 4% 0%, 0% 100%)' 'polygon(100% 100%, 100% 0%, 4% 0%, 0% 100%)',
+            margin-bottom: 40px 0,
+    ));
+  }
+}
+
+.partners {
+  margin-bottom: 30px;
+
+  .title {
+    @include text(48px, normal, 500, normal, #fff);
+    @include arrayProps((
+            font-size: 36px null null 48px,
+    ));
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    box-shadow: 0 5.867px 12.267px 0px rgba(0, 0, 0, 0.10), 0px 22.4px 22.4px 0px rgba(0, 0, 0, 0.09), 0px 50.667px 30.4px 0px rgba(0, 0, 0, 0.05), 0px 89.6px 35.733px 0px rgba(0, 0, 0, 0.01), 0px 140.267px 39.467px 0px rgba(0, 0, 0, 0.00);
+    border-radius: 22px;
+    width: max-content;
+    @include arrayProps((
+            padding: '30px 50px' null '32px 53px',
+            height: 233px null null 218px,
+    ));
+
+    .img {
+      height: 80px;
+      width: auto;
+    }
+
+    .name {
+      @include text(24px, normal, 700, normal, #fff);
+      max-width: 606px;
+      text-align: center;
+      @include arrayProps((
+              margin-top: 54px 40px,
+      ));
+    }
+
+    .mvd {
+      margin-top: 30px;
+    }
+  }
+}
+
+.main {
+  max-width: 1920px;
+  margin: auto;
+}
+
+#bannerTitle {
+  @include arrayProps((
+    font-size: 24px 28px 36px 54px 67px,
+  ));
+}

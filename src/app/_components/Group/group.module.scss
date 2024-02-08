@@ -1,0 +1,180 @@
+@import 'src/theme/helpers';
+
+.group {
+  display: flex;
+  flex-direction: column;
+  @include arrayProps((
+          gap: 20px,
+          padding: '20px 24px' null null null '60px 120px',
+  ));
+}
+
+.title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  @include arrayProps((
+          overflow-x: scroll null initial
+  ));
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card1 {
+  background: #FF7A00;
+  width: 63%;
+}
+
+.title1 {
+  display: block;
+  @include arrayProps((
+          max-width: null null 300px 500px,
+  ))
+}
+
+.card2 {
+  width: 49%;
+  color: white;
+}
+
+.card3 {
+  width: 45%;
+  background: #FF7A00;
+  color: white;
+}
+
+.card4 {
+  width: 55%;
+  color: white;
+}
+
+.title4 {
+  display: block;
+  @include arrayProps((
+          max-width: null null null 400px auto
+  ))
+}
+
+.card5 {
+  width: 50%;
+  color: white;
+}
+
+.card6 {
+  width: 50%;
+  background: #FF7A00;
+}
+
+.sp1 {
+  transform: translateY(-70%);
+  top: 0;
+  right: 0;
+
+  span {
+    border-radius: 100%;
+    border-right: solid #2A2A2A;
+    border-bottom: solid #2A2A2A;
+    border-left: solid #2A2A2A;
+    border-top: solid transparent;
+
+    @include arrayProps((
+            border-width: null null 20px 30px,
+    ))
+  }
+}
+
+.sp2 {
+  transform: translate(50%, 50%);
+  right: 0;
+  bottom: 0;
+
+  span {
+    border-radius: 100%;
+    border-right: solid #FF7A00;
+    border-bottom: solid transparent;
+    border-left: solid #FF7A00;
+    border-top: solid #FF7A00;
+
+
+    @include arrayProps((
+            border-width: null null 20px 30px,
+    ))
+  }
+}
+
+.sp3 {
+  transform: translate(50%, -56%);
+  right: 0;
+  top: 0;
+
+  span {
+    border-radius: 100%;
+    border-right: solid #FF7A00;
+    border-top: solid transparent;
+    border-left: solid #FF7A00;
+    border-bottom: solid #FF7A00;
+
+
+    @include arrayProps((
+            border-width: null null 20px 30px,
+    ))
+  }
+}
+
+.sp4 {
+  transform: translate(50%, 60%);
+  right: 0;
+  bottom: 0;
+
+  span {
+    border-radius: 100%;
+    border-right: solid #FF7A00;
+    border-bottom: solid transparent;
+    border-left: solid #FF7A00;
+    border-top: solid #FF7A00;
+
+    @include arrayProps((
+            border-width: null null 20px 30px,
+    ))
+  }
+}
+
+.sp5 {
+  transform: translate(-55%, 60%);
+  left: 0;
+  bottom: 0;
+
+  span {
+    border-radius: 100%;
+    border-right: solid #2A2A2A;
+    border-bottom: solid transparent;
+    border-left: solid #2A2A2A;
+    border-top: solid #2A2A2A;
+    @include arrayProps((
+            border-width: null null 20px 30px,
+    ))
+  }
+}
+
+.backCardContent {
+  color: white;
+
+  @include arrayProps((
+          font-size: 18px 27px 24px 36px
+  ))
+}
+

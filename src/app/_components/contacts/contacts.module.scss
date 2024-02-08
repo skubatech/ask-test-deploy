@@ -1,0 +1,138 @@
+@import 'src/theme/helpers';
+
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @include arrayProps((
+    gap: 30px null 25px 50px,
+  ));
+  
+  .title {
+    @include text(48px, normal, 500, normal, #fff);
+    @include arrayProps((
+      font-size: 36px null null 48px,
+    ));
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 30px;
+    @include arrayProps((
+      flex-direction: 'column' null 'row',
+    ));
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 90px;
+      @include arrayProps((
+        gap: 40px null 27px 40px 57px,
+      ));
+
+      .link {
+        @include text(36px, normal, 400, normal, #fff);
+        text-decoration: none;
+        @include arrayProps((
+          font-size: 24px null null 36px
+        ));
+      }
+
+      .social {
+        display: flex;
+        gap: 35px;
+        @include arrayProps((
+          justify-content: 'space-between' 'normal' null,
+          gap: '' 35px 20px 35px,
+        ));
+
+        .link {
+            transition: all .3s ease-in-out;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
+        .icon {
+          @include arrayProps((
+            width: 48px null 24px 48px,
+            height: 48px null 24px 48px,
+          ));
+        }
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 40px;
+      background: #ff7a00;
+      padding: 60px 48px;
+      @include arrayProps((
+        padding: '30px 24px' null '33px 26px' '48px 38px' '60px 48px',
+        border-radius: 20px null 22px 40px,
+        width: '' null 50%,
+      ));
+    
+      .title {
+        @include text(36px, normal, 500, normal, #1e1e1e);
+        text-align: center;
+        margin-bottom: 60px;
+        @include arrayProps((
+          font-size: 20px null null 32px 36px,
+          margin-bottom: 26px null 32px 35px 60px
+        ))
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        @include arrayProps((
+          gap: 13px null null 18px 24px,
+        ));
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 30px;
+          cursor: pointer;
+          background-color: #1e1e1e;
+          text-decoration: none;
+          @include arrayProps((
+            padding: 16px null null 24px 30px,
+            border-radius: 11px null null 20px,
+          ));
+  
+          .text {
+              @include text(24px, normal, 400, 120%, #fff);
+              @include arrayProps((
+                font-size: 14px null null 21px 24px,
+              ));
+          }
+
+          .icon {
+            @include arrayProps((
+              width: 13px null null 22px 24px,
+              height: 13px null null 22px 24px,
+            ));
+          }
+        }
+  
+        .itemWrap {
+          display: flex;
+          gap: 24px;
+          justify-content: space-between;
+          @include arrayProps((
+            gap: 13px null null 20px 24px,
+          ));
+  
+          .itemRow {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

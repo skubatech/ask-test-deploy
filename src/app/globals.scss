@@ -1,0 +1,17 @@
+@import 'src/theme/helpers';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1E1E1E;
+}
+
+.container {
+  @include arrayProps((
+    padding-left: 24px null 48px 120px,
+    padding-right: 24px null 48px 120px,
+  ));
+}

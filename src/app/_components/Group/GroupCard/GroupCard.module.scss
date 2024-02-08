@@ -1,0 +1,65 @@
+@import 'src/theme/helpers';
+
+.card {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  background: #2A2A2A;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .6s;
+  color: #1E1E1E;
+  font-weight: 500;
+  min-height: 150px;
+
+  &:hover {
+    transform: scale(1.01) rotateY(0);
+  }
+
+  @include arrayProps((
+          height: null null 160px 260px,
+          min-width: 80% null auto,
+          padding: 20px null 36px
+  ))
+}
+
+.title {
+  @include arrayProps((
+          font-size: 36px null 24px 48px
+  ))
+}
+
+.cardFront {
+  z-index: 9;
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  z-index: -1;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  background: #1A1A1A;
+  top: 0;
+  right: 0;
+  transform: rotateY(-180deg);
+  opacity: 0;
+  padding: 24px;
+  transition: all .6s;
+}
+
+.rotate {
+  background: transparent !important;
+  transition: all .6s;
+  transform: rotateY(180deg) !important;
+
+  .cardFront {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .cardBack {
+    opacity: 1;
+    z-index: 11;
+  }
+}

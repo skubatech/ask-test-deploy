@@ -1,0 +1,51 @@
+@import 'src/theme/helpers';
+
+.spinner {
+  position: absolute;
+  z-index: 10;
+
+  @include arrayProps((
+          display: none null block
+  ));
+
+  .f_spin {
+    display: block;
+    transition: transform .2s;
+  }
+
+  .s_spin {
+    display: block;
+    transition: transform .2s;
+
+    @include arrayProps((
+            margin: null null 20px 30px,
+            padding: null null 70px 100px
+    ))
+  }
+}
+
+.active_f {
+  animation: rotate 2s infinite forwards !important;
+}
+
+.active_s {
+  animation: rotate_rev 6s reverse infinite forwards !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_rev {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

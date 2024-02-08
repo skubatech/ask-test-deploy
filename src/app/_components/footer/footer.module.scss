@@ -1,0 +1,109 @@
+@import 'src/theme/helpers';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1A1A1A;
+    @include arrayProps((
+        gap: 40px null 0,
+    ));
+   
+    .content {
+        display: flex;
+        justify-content: space-between;
+        @include arrayProps((
+            flex-direction: 'column' null 'row',
+            gap: 40px null 0,
+        ));
+
+        .leftContent {
+            display: flex;
+            flex-direction: column;
+            @include arrayProps((
+                gap: 15px null null 30px,
+            ));
+    
+            .link {
+                @include text(24px, normal, 400, 120%, #fff);
+                text-decoration: none;
+                @include arrayProps((
+                    font-size: 16px null null 24px,
+                ));
+            }
+
+            .social {
+                display: flex;
+                @include arrayProps((
+                    display: 'none' null 'flex',
+                    gap: 0 0 20px 35px,
+                ));
+    
+                .link {
+                    transition: all .3s ease-in-out;
+    
+                    &:hover {
+                        scale: 1.1;
+                    }
+
+                    .icon {
+                        @include arrayProps((
+                            width: 24px null null 48px,
+                            height: 24px null null 48px,
+                        ));
+                    }
+                }
+            }
+        }
+
+        .rightContent {
+            display: flex;
+            flex-direction: column;
+            @include arrayProps((
+                align-items: 'flex-start' null 'flex-end',
+                gap: 15px null 10px 22px,
+            ));
+
+            .link {
+                text-decoration: none;
+                @include text(20px, normal, 400, 120%, #fff);
+                @include arrayProps((
+                    font-size: 16px null 12px 20px,
+                ));
+            }
+        }
+    }    
+
+    .text {
+        @include text(24px, normal, 400, 120%, #fff);
+        text-align: center;
+        @include arrayProps((
+            font-size: 16px null null 24px
+        ));
+    }
+
+    .social {
+        display: flex;
+        gap: 35px;
+        @include arrayProps((
+            display: 'flex' null 'none',
+            gap: 20px,
+        ));
+
+        .link {
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            .icon {
+                @include arrayProps((
+                    width: 24px null null 48px,
+                    height: 24px null null 48px,
+                ));
+            }
+        }
+    }
+}

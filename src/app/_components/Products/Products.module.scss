@@ -1,0 +1,14 @@
+@import 'src/theme/helpers';
+
+.main {
+  margin: auto;
+  justify-content: center;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+
+  @include arrayProps((
+          padding: '20px 48px' null null null '60px 120px',
+          gap: 10px 25px,
+          display: grid null flex,
+  ))
+}
