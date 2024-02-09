@@ -14,7 +14,7 @@ import {ClientsBanner} from "@/app/_components/ClientsBanner/ClientsBanner";
 import {MainBanner} from "@/app/_components/MainBanner/MainBanner";
 
 
-export default function Home () {
+const Home =  () => {
 
     return (
         <main className={styles.main}>
@@ -28,4 +28,6 @@ export default function Home () {
         </main>
     );
 }
+
+export default Home
 
