@@ -1,8 +1,11 @@
 import WP from './config/webpack.js'
-
+const repo = 'ask-test-deploy'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/ask-test-deploy",
+    assetPrefix: assetPrefix,
+    basePath: basePath,
     output: "export",
     reactStrictMode: true,
     webpack: (config, { webpack }) => WP(config, webpack),
