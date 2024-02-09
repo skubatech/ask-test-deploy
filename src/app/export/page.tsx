@@ -6,7 +6,7 @@ import { Guarantees } from "../_components/guarantees";
 
 import styles from './styles.module.scss';
 
-function Export () {
+export default function Export () {
     return (
         <section className={`${styles.wrapper} container`}>
             <h2 className={styles.title}>Вывоз и утилизация</h2>
@@ -16,5 +16,3 @@ function Export () {
         </section>
     )
 }
-
-export default Export;

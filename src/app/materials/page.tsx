@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Нерудные материалы - ASK GROUP",
     description: "Нерудные матералы | ASK GROUP",
 };
-function Materials() {
+export default function Materials() {
     return (
         <section className={`${styles.wrapper} container`}>
             <h2 className={styles.title}>Нерудные материалы</h2>
@@ -19,5 +19,3 @@ function Materials() {
         </section>
     )
 }
-
-export default Materials;

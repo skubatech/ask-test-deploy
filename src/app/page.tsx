@@ -14,7 +14,7 @@ import {ClientsBanner} from "@/app/_components/ClientsBanner/ClientsBanner";
 import {MainBanner} from "@/app/_components/MainBanner/MainBanner";
 
 
-function Home () {
+export default function Home () {
 
     return (
         <main className={styles.main}>
@@ -27,6 +27,5 @@ function Home () {
             <Contacts/>
         </main>
     );
-};
+}
 
-export default Home;

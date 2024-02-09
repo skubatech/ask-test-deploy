@@ -4,7 +4,7 @@ import { Guarantees } from "../_components/guarantees";
 
 import styles from './styles.module.scss';
 
-function Delivery () {
+export default function Delivery () {
     return (
         <section className={`${styles.wrapper} container`}>
             <Guarantees />
@@ -12,5 +12,3 @@ function Delivery () {
         </section>
     )
 }
-
-export default Delivery;
