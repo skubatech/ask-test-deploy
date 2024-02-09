@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Нерудные материалы - ASK GROUP",
     description: "Нерудные матералы | ASK GROUP",
 };
-const Materials = () => {
+function Materials() {
     return (
         <section className={`${styles.wrapper} container`}>
             <h2 className={styles.title}>Нерудные материалы</h2>

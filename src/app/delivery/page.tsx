@@ -3,7 +3,7 @@ import { Guarantees } from "../_components/guarantees";
 
 import styles from './styles.module.scss';
 
-const Delivery = () => {
+function Delivery () {
     return (
         <section className={`${styles.wrapper} container`}>
             <Guarantees />
