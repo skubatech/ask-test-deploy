@@ -1,7 +1,7 @@
 {
-  "/_not-found": "app/_not-found.js",
   "/delivery/page": "app/delivery/page.js",
   "/export/page": "app/export/page.js",
+  "/_not-found": "app/_not-found.js",
   "/page": "app/page.js",
   "/materials/page": "app/materials/page.js"
 }
