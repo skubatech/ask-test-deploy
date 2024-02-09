@@ -1,14 +1,14 @@
 import styles from './contacts.module.scss';
 import Image from 'next/image';
 
-import Vk from '@/assets/icons/vk.svg?url';
-import Telegram from '@/assets/icons/telegram.svg?url';
-import Whatsapp from '@/assets/icons/wa.svg?url';
-import Instagram from '@/assets/icons/instagram.svg?url';
-import Phone from '@/assets/icons/whitePhone.svg?url';
-import Messenger from '@/assets/icons/messenger.svg?url';
-import WhatsAppWhite from '@/assets/icons/waWhite.svg?url';
-import TelegramWhite from '@/assets/icons/telegramWhite.svg?url';
+import Vk from '@/assets/icons/vk.svg';
+import Telegram from '@/assets/icons/telegram.svg';
+import Whatsapp from '@/assets/icons/wa.svg';
+import Instagram from '@/assets/icons/instagram.svg';
+import Phone from '@/assets/icons/whitePhone.svg';
+import Messenger from '@/assets/icons/messenger.svg';
+import WhatsAppWhite from '@/assets/icons/waWhite.svg';
+import TelegramWhite from '@/assets/icons/telegramWhite.svg';
 
 export const Contacts = () => {
   return (

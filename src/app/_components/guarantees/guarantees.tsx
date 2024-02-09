@@ -4,10 +4,10 @@ import Image from 'next/image';
 import styles from './guarantees.module.scss';
 import { ReactNode, useState } from 'react';
 
-import Technique from '@/assets/icons/technique.svg?url';
-import Materials from '@/assets/icons/materials.svg?url';
-import Staff from '@/assets/icons/staff.svg?url';
-import Docs from '@/assets/icons/docs.svg?url';
+import Technique from '@/assets/icons/technique.svg';
+import Materials from '@/assets/icons/materials.svg';
+import Staff from '@/assets/icons/staff.svg';
+import Docs from '@/assets/icons/docs.svg';
 import technique from '@/assets/images/technique.png';
 import materials from '@/assets/images/materials.png';
 import staff from '@/assets/images/staff.png';

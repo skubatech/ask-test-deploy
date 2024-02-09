@@ -2,10 +2,10 @@
 import styles from './footer.module.scss';
 import Image from 'next/image';
 
-import Vk from '@/assets/icons/vk.svg?url';
-import Telegram from '@/assets/icons/telegram.svg?url';
-import Instagram from '@/assets/icons/instagram.svg?url';
-import Whatsapp from '@/assets/icons/wa.svg?url';
+import Vk from '@/assets/icons/vk.svg';
+import Telegram from '@/assets/icons/telegram.svg';
+import Instagram from '@/assets/icons/instagram.svg';
+import Whatsapp from '@/assets/icons/wa.svg';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
