@@ -20,6 +20,7 @@
     "react-dom": "^18",
     "react-simple-tree-menu": "^1.1.18",
     "sass": "^1.70.0",
+    "semver": "^7.6.0",
     "swiper": "^11.0.5",
     "yarn": "^1.22.21"
   },
