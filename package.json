@@ -10,7 +10,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "export": "next export",
-    "lint": "next lint"
+    "lint": "next lint",
+    "linter": "npm run lint"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
