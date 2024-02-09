@@ -7,7 +7,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         domains: [
-            "https://skubatech.github.io/ask-test-deploy/",
+            "skubatech.github.io"
         ]
     },
     webpack: (config, { webpack }) => WP(config, webpack),
