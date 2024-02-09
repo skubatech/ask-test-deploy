@@ -4,7 +4,6 @@ import WP from './config/webpack.js'
 const nextConfig = {
     trailingSlash: true,
     output: "export",
-    assetPrefix: ".",
     webpack: (config, { webpack }) => WP(config, webpack),
 };
 
