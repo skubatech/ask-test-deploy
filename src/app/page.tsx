@@ -1,4 +1,4 @@
-'use client';
+export const dynamic = "force-dynamic";
 import styles from './page.module.scss';
 
 import './swipper-bullet.scss';
@@ -12,18 +12,9 @@ import {Cases} from "@/app/_components/Cases/Cases";
 import {Products} from "@/app/_components/Products/Products";
 import {ClientsBanner} from "@/app/_components/ClientsBanner/ClientsBanner";
 import {MainBanner} from "@/app/_components/MainBanner/MainBanner";
-import {useEffect} from "react";
+
 
 function Home () {
-
-    useEffect(() => {
-        if (window.location.hash) {
-            const element = document.querySelector(window.location.hash);
-            if (element) {
-                element.scrollIntoView({behavior: 'smooth'});
-            }
-        }
-    }, []);
 
     return (
         <main className={styles.main}>

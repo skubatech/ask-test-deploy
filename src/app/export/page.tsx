@@ -1,4 +1,4 @@
-'use client';
+export const dynamic = "force-dynamic";
 
 import { Connection } from "../_components/connection";
 import { ExportCards } from "../_components/exportCards";

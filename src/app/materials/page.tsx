@@ -1,6 +1,7 @@
+export const dynamic = "force-dynamic";
 import {Guarantees} from "@/app/_components/guarantees";
 import {Connection} from "@/app/_components/connection";
-import {MaterialsSwitcher} from "@/app/materials/materialsSwitcher/MaterialsSwitcher";
+import {MaterialsSwitcher} from "@/app/_components/materialsSwitcher/MaterialsSwitcher";
 import type {Metadata} from "next";
 import styles from "@/app/export/styles.module.scss";
 
