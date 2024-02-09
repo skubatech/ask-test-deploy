@@ -1,13 +1,12 @@
 'use client';
 import styles from './aboutCompany.module.scss';
-import Image from 'next/image';
 
 import principles from '@/assets/images/principles.png';
-// import MouseSquare from '@/assets/icons/mouseSquare.svg?url';
-// import Number750 from '@/assets/icons/750.svg?url';
-// import Number600 from '@/assets/icons/600.svg?url';
-// import Number550 from '@/assets/icons/550.svg?url';
-// import Number50 from '@/assets/icons/50.svg?url';
+import MouseSquare from '@/assets/icons/mouseSquare.svg';
+import Number750 from '@/assets/icons/750.svg';
+import Number600 from '@/assets/icons/600.svg';
+import Number550 from '@/assets/icons/550.svg';
+import Number50 from '@/assets/icons/50.svg';
 
 export const AboutCompany = () => {
     return (
@@ -28,39 +27,39 @@ export const AboutCompany = () => {
                         <h3 className={styles.title}>Наши принципы</h3>
                         <div className={styles.principle}>
                             <span className={styles.item}>Четкие сроки поставки</span>
-                            {/*<Image src={MouseSquare} className={styles.img} alt='Icon'/>*/}
+                            <img src={MouseSquare} className={styles.img} alt='Icon'/>
                         </div>
                         <div className={styles.principle}>
                             <span className={styles.item}>Квалифицированный персонал</span>
-                            {/*<Image src={MouseSquare} className={styles.img} alt='Icon'/>*/}
+                            <img src={MouseSquare} className={styles.img} alt='Icon'/>
                         </div>
                         <div className={styles.principle}>
               <span className={styles.item}>
                 Полная документальная отчётность
               </span>
-                            {/*<Image src={MouseSquare} className={styles.img} alt='Icon'/>*/}
+                            <img src={MouseSquare} className={styles.img} alt='Icon'/>
                         </div>
                     </div>
                 </div>
                 <div className={styles.imgWrap}>
-                    <Image src={principles} alt='principles' className={styles.img}/>
+                    <img {...principles} alt='principles' className={styles.img}/>
                 </div>
             </div>
             <div className={styles.statistics}>
                 <div className={styles.item}>
-                    {/*<Image src={Number750} className={styles.img} alt='Number icon'/>*/}
+                    <img src={Number750} className={styles.img} alt='Number icon'/>
                     <span className={styles.text}>Грунта вывезено и утилизировано</span>
                 </div>
                 <div className={styles.item}>
-                    {/*<Image src={Number600} className={styles.img} alt='Number icon'/>*/}
+                    <img src={Number600} className={styles.img} alt='Number icon'/>
                     <span className={styles.text} id={styles.num600}>Поставлено песка по СПБ и ЛО</span>
                 </div>
                 <div className={styles.item}>
-                    {/*<Image src={Number550} className={styles.img} alt='Number icon'/>*/}
+                    <img src={Number550} className={styles.img} alt='Number icon'/>
                     <span className={styles.text}>Поставлено щебня</span>
                 </div>
                 <div className={styles.item}>
-                    {/*<Image src={Number50} className={styles.img} alt='Number icon'/>*/}
+                    <img src={Number50} className={styles.img} alt='Number icon'/>
                     <span className={styles.text} id={styles.num50}>
             Крупных строительных объектов реализовано
           </span>

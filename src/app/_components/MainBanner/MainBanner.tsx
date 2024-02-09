@@ -2,7 +2,7 @@
 import {Autoplay, Pagination} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import styles from '@/app/page.module.scss';
-import Image from 'next/image';
+
 import {useState} from 'react';
 import {bannerItems} from '@/app/_components/MainBanner/MainBanner.constants';
 import {useRouter} from 'next/navigation';
@@ -30,8 +30,8 @@ export const MainBanner = () => {
                             <button className={styles.btn}>Заказать сейчас</button>
                         </div>
                         <div className={styles.imgWrap}>
-                            <Image
-                                src={item.imgSrc}
+                            <img
+                                {...item.imgSrc}
                                 alt='Banner'
                                 className={`${styles.img} ${i === 0 && styles.banner1} ${
                                     i === 1 && styles.banner2
