@@ -5,6 +5,11 @@ const nextConfig = {
     basePath: '/ask-test-deploy',
     output: "export",
     reactStrictMode: true,
+    images: {
+        domains: [
+            "https://skubatech.github.io/ask-test-deploy/",
+        ]
+    },
     webpack: (config, { webpack }) => WP(config, webpack),
 };
 
