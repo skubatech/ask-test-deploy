@@ -1,5 +1,5 @@
-'use client';
-export default function NotFound() {
+
+export default async function NotFound() {
     return (
         <div>Not Found</div>
     )
