@@ -1,4 +1,4 @@
-
+export const dynamic = "force-dynamic";
 import {Guarantees} from "@/app/_components/guarantees";
 import {Connection} from "@/app/_components/connection";
 import {MaterialsSwitcher} from "@/app/_components/materialsSwitcher/MaterialsSwitcher";
